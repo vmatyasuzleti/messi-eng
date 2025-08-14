@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lionel Messi's life, career, awards, stats, and fun facts – a fan-made tribute to the legend.">
+  <title>Lionel Messi - Legendary Footballer</title>
+  <style>
+    /* Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.8;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      background-image: url('https://dohanews.co/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-18-at-19.01.39.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      margin-top: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      animation: fadeUp 1s ease;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    /* Highlight */
+    .quote {
+      font-style: italic;
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-left: 5px solid #0077cc;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+
+    /* Fun Facts */
+    .facts ul li {
+      margin-bottom: 0.5rem;
+      list-style: "⭐ ";
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid #0077cc;
+      padding-left: 1rem;
+    }
+    .timeline div {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .timeline div::before {
+      content: "⚽";
+      position: absolute;
+      left: -2rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background-color: #222;
+      color: white;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0077cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+      font-size: 1rem;
+    }
+    #backToTop:hover {
+      background: #005fa3;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .hero-content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Lionel Messi</h1>
+      <p>The Eternal Legend of Football</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>Biography</h2>
+    <p>Lionel Andrés Messi was born on June 24, 1987, in the city of Rosario, Argentina. From a young age, he stood out with extraordinary ball control skills. At the age of eight, he joined the local Newell's Old Boys, and at 13, he moved to Spain to continue his development in FC Barcelona's youth academy.</p>
+    <p>During his 21 years at Barça, Messi became one of the most successful players of all time, winning more than 30 trophies with the club, including 4 Champions League titles and 10 La Liga championships.</p>
+    <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/G5N5PAE4ZVKNHM6NDE2XLL7I44.jpg" alt="Lionel Messi training">
+  </section>
+
+  <section class="career">
+    <h2>Career Highlights</h2>
+    <ul>
+      <li><strong>FC Barcelona (2004–2021):</strong> 672 goals, 778 matches</li>
+      <li><strong>Paris Saint-Germain (2021–2023):</strong> French league champion, cup winner</li>
+      <li><strong>Inter Miami (2023–):</strong> Boosted MLS excitement to a new level in the USA</li>
+    </ul>
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/230104103714-01-lionel-messi-psg.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="Lionel Messi in PSG jersey">
+  </section>
+
+  <section class="awards">
+    <h2>Awards & Achievements</h2>
+    <ul>
+      <li>8× Ballon d'Or</li>
+      <li>6× Golden Shoe (Europe's top scorer)</li>
+      <li>3× FIFA World Player of the Year</li>
+      <li>World Cup Winner (2022 – as Argentina's captain)</li>
+      <li>Copa América Winner (2021)</li>
+    </ul>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGeMw27O_VOKX9opmoDJWIatXVwhZqKh5oAQ&s" alt="Messi with the World Cup trophy">
+  </section>
+
+  <section class="stats">
+    <h2>Statistics</h2>
+    <p><strong>Matches:</strong> <span class="counter" data-target="1000">0</span>+</p>
+    <p><strong>Goals:</strong> <span class="counter" data-target="800">0</span>+</p>
+    <p><strong>Assists:</strong> <span class="counter" data-target="350">0</span>+</p>
+    <p><strong>Trophies:</strong> <span class="counter" data-target="40">0</span>+</p>
+  </section>
+
+  <section class="facts">
+    <h2>Fun Facts</h2>
+    <ul>
+      <li>His favorite food is milanesa (breaded beef cutlet).</li>
+      <li>Holds the record for most goals in a calendar year: 91 (2012).</li>
+      <li>Although left-footed, he has scored many goals with his right foot and head.</li>
+    </ul>
+  </section>
+
+  <section class="timeline-section">
+    <h2>Career Timeline</h2>
+    <div class="timeline">
+      <div><strong>2004:</strong> Professional debut for FC Barcelona</div>
+      <div><strong>2009:</strong> First Ballon d'Or</div>
+      <div><strong>2012:</strong> 91 goals in one year</div>
+      <div><strong>2021:</strong> Copa América victory</div>
+      <div><strong>2022:</strong> World Cup triumph</div>
+    </div>
+  </section>
+
+  <section class="video">
+  <h2>Highlight Video</h2>
+  <iframe width="100%" height="400" 
+    src="https://www.youtube.com/embed/m2qkkCYbU8k" 
+    title="Lionel Messi Skills & Free Kicks Compilation" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</section>
+
+  <section class="inspiration">
+    <h2>Inspiration</h2>
+    <p>Messi is not only iconic as a footballer but also a role model for millions around the world. His humble nature and relentless dedication make him, for many, the embodiment of the sport’s true values.</p>
+    <div class="quote">"Every day I learn, I grow, and I try to give my best." – Lionel Messi</div>
+    <img src="https://imgresizer.tntsports.io/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.tntsports.io/2015/06/05/1606912-34135652-2560-1440.jpg" alt="Messi training in Argentina jersey">
+  </section>
+
+  <footer>
+    <p>📌 Created for Messi fans | © 2025 | Respect to the GOAT 🐐</p>
+  </footer>
+
+  <button id="backToTop">⬆</button>
+
+  <script>
+    // Animated Counter
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = target / speed;
+          if(count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    };
+
+    let countersStarted = false;
+    window.addEventListener('scroll', () => {
+      const stats = document.querySelector('.stats');
+      const statsTop = stats.getBoundingClientRect().top;
+      if(statsTop < window.innerHeight && !countersStarted) {
+        animateCounters();
+        countersStarted = true;
+      }
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    console.log("Welcome to the Messi page! Inspiring, isn't it?");
+  </script>
+
+</body>
+</html>
